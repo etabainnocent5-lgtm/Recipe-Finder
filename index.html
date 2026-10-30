@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<header class="navbar">
+    <a href="#home" class="logo">Healthy Recipe Finder</a>
+
+    <nav class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#recipes">Recipes</a>
+    </nav>
+
+    <!-- Top-Right Button -->
+     <a href="#" class="browse-btn">Browse recipes</a>
+</header>
+
+<main>
+        
+<!-- HOME SECTION -->
+<section class="home" id="home">
+
+    <!-- HERO -->
+    <div class="home-hero">
+        <h1>Healthy meals, zero fuss</h1>
+
+        <p>
+            Discover eight quick, whole-food recipes that you can cook tonight
+            — no processed junk, no guesswork.
+        </p>
+
+        <a href="#recipes" class="start-exploring-btn">
+            Start exploring
+        </a>
+    </div>
+
+    <!-- MAIN KITCHEN IMAGE -->
+    <div class="home-main-image">
+        <img
+            src="images/bigger.png"
+            alt="Preparing fresh ingredients in a kitchen"
+        >
+    </div>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <h2>What you'll get</h2>
+
+        <div class="features-grid">
+
+            <article class="feature-card">
+                <span class="feature-icon">🥖</span>
+                <h3>Whole-food recipes</h3>
+                <p>
+                    Each dish uses everyday, unprocessed ingredients.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-icon">⚡</span>
+                <h3>Minimum fuss</h3>
+                <p>
+                    All recipes are designed to make eating healthy quick and easy.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-icon">🔎</span>
+                <h3>Search in seconds</h3>
+                <p>
+                    Filter by name or ingredient and jump straight to the recipe you need.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- BUILT FOR REAL LIFE -->
+    <section class="real-life">
+
+        <div class="real-life-text">
+            <h2>Built for real life</h2>
+
+            <p>
+                Cooking shouldn't be complicated. These recipes come in
+                under 30 minutes of active time, fit busy schedules,
+                and taste good enough to repeat.
+            </p>
+
+            <p>
+                Whether you're new to the kitchen or just need fresh ideas,
+                we've got you covered.
+            </p>
+        </div>
+
+        <img
+            src="images/Builtforreallife.png"
+            alt="Fresh vegetables being prepared on a chopping board"
+        >
+
+    </section>
+
+    <!-- FINAL BANNER -->
+    <section class="cook-banner">
+        <h2>Ready to cook smarter?</h2>
+
+        <p>
+            Hit the button, pick a recipe, and get dinner on the table—fast.
+        </p>
+
+        <a href="#recipes" class="browse-recipes-btn">
+            Browse recipes
+        </a>
+    </section>
+
+</section>
+      
+
+    
+<!-- RECIPES SECTION -->
+<section id="recipes" class="recipes-page">
+
+    <div class="recipes-content">
+        <h1>Explore our simple, healthy recipes</h1>
+
+        <p class="recipes-description">
+            Discover eight quick, whole-food dishes that fit real-life schedules and taste amazing.Use the search bar to find a recipe by name or ingredient, or simply scroll the list and let something delicious catch your eye.
+        </p>
+
+        <!-- SEARCH BAR -->
+        <form id="search-form" class="search-form">
+            <input
+                type="search"
+                id="search-input"
+                placeholder="Search by name or ingredient..."
+            >
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- RECIPE FILTERS -->
+    <div class="filters">
+        <label for="prep-filter">Max prep time</label>
+
+        <select id="prep-filter">
+            <option value="all">Any time</option>
+            <option value="15">15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="45">45 minutes</option>
+        </select>
+
+        <label for="cook-filter">Max cook time</label>
+
+        <select id="cook-filter">
+            <option value="all">Any time</option>
+            <option value="15">15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="45">45 minutes</option>
+        </select>
+    </div>
+
+    <!-- RECIPE CARDS FROM JAVASCRIPT -->
+    <div class="section-heading">
+        <h2>All recipes</h2>
+        <p id="recipe-count">Our favourite dishes</p>
+    </div>
+
+    <div id="recipe-list" class="recipe-grid"></div>
+
+</section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <h2>About Recipe Finder</h2>
+
+        <p>
+            We help you discover meals, explore ingredients
+            and find inspiration for your next dish.
+        </p>
+    </section>
+
+</main>
+
+<footer></footer>
+</body>
+</html>
